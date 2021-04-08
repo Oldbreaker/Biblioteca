@@ -1,0 +1,13 @@
+<h1>Detalle de libro</h1>
+
+<p>{{libro.titulo}}</p>
+<p>{{libro.fecha}}</p>
+<p>{{libro.categoria}}</p>
+
+<p>-------------Many to Many---------------</p>
+<ul>
+  {% for autor in libro.autor.all %}
+  <li>{{autor}}</li>
+
+  {% endfor %}
+</ul>
